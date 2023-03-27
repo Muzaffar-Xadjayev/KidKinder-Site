@@ -1,0 +1,21 @@
+{% extends 'includes/main.html'%}
+{% load static%}
+{% block title%}
+Blog detail page
+{% endblock %}
+
+{% block content%}
+<div class="container-fluid pt-5">
+    <div class="container p-5">
+        <center>
+            <div>
+                <h2 class="">{{ detail.title}}</h2>
+                <hp>{{ detail.description}}</hp>
+                
+            </div>
+            <img class="img-fluid w-75" src="/media/{{detail.picture}}" alt="">
+        </center>
+        
+    </div>
+</div>
+{% endblock %}
